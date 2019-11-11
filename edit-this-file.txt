@@ -1,4 +1,8 @@
 Instructions: Add your username to this file and check in your edit.
 
 choibhs
+<<<<<<< HEAD
 thebergelu
+=======
+pimentalfrbhs
+>>>>>>> b311e285258bdcfec8efd51d95c185d10394da19
