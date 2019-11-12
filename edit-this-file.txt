@@ -1,8 +1,6 @@
 Instructions: Add your username to this file and check in your edit.
 
-choibhs
-asdf
-test
+asdf choibhs asdf
 pimentalfrbhs
 test
 hazardbhs
