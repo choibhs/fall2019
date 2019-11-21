@@ -3,13 +3,17 @@
 <head>
   <title> Layout & Rules</title>
    <style>
+   img{
+     height: 400px;
+   }
    body
    {
-     background-color: lightblue
+     background-color: lightblue;
+     color: darkred;
    }
    .topics
    {
-     color: green
+     color: green;
    }
    </style>
   <script>
@@ -43,38 +47,47 @@
     }
     function myFunction8()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.32.23 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.32.23 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     function myFunction9()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.33.53 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.33.53 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     function myFunction10()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.33.11 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.33.11 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     function myFunction11()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.36.22 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.36.22 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     function myFunction12()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.36.59 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.36.59 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     function myFunction13()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.35.48 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.35.48 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     function myFunction14()
     {
-        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.34.39 PM.png'
+        document.getElementById("myImage").src='Screen Shot 2019-11-10 at 1.34.39 PM.png';
+        document.getElementById('myImage').style.display='block';
     }
     </script>
   </head>
   <body>
 <h1> <a href="#layout">Layout</a> of the Course & <a href="#special">Specialty</a> Rules</h1>
 <a id="layout"></a>
-<h2> <span class="topics">Layout</span> </h2>                             <img id="myImage">
+<img id="myImage" src="Screen Shot 2019-11-14 at 11.23.50 AM.png">
+<a id="layout"></a>
+<h2> <span class="topics">Layout</span> </h2>
 <ul>
     <li> <button onclick='myFunction8();'>Picture</button><button onclick='alert("Long Grass on Either side of the Fairway")'>Rough</button></button> </li><br/>
     <li> <button onclick='myFunction9();'>Picture</button><button onclick='alert("Short Grass at the Middle of the Course")'>Fairway </button></li><br/>
@@ -95,5 +108,7 @@
       <li> <button onclick='myFunction13();'>Picture</button><button onclick='myFunction6();'>Teebox</button> </li><br/>
       <li> <button onclick='myFunction14();'>Picture</button><button onclick='myFunction7();'>Water</button> </li><br/>
     </ul>
+    <button onclick="document.getElementById('myImage').style.display='none'"> Hide the Picture </button>
+    <button onclick="document.getElementById('myImage').style.display='block'">Show the Picture </button>
   </body>
   </html>
