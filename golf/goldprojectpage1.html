@@ -14,9 +14,16 @@
     {
       padding:10px
     }
+    img
+    {
+      height: 400px
+    }
     </style>
     <script>
-      function myFunction()
+      function myFunction(){
+        document.getElementById("myImage").src="payne0005.jpeg"
+      }
+
       </script>
 <head>
 
@@ -27,7 +34,6 @@
 <body>
 <b> <h1> Who is the goat Golfer?????? </h1> </b>
 <table>
-
   <tr>
     <th> The GOATS </th>
     <th> How Many Masters They Have Won  </th>
@@ -56,7 +62,8 @@
 <tr>
   <td> 1. Payne Stewart </td>
   <td> 0  T-8 in 86'</td>
-</tr>
-<button onclick='alert(<img src="payne0005.jpeg" height= 500px>);'> Picture of Payne Stewart Info</button>
-<button onclick='alert("Payne Stewarts sty is out of this world. He makes all the girls mouth water like a water fauscet in the middle of the summer on a outdoor cement basketball court.");' Fun Fact </button>
-  </
+</tr><br/>
+<button onclick='myFunction();'> Picture of Payne Stewart Info</button>
+<button onclick='alert("Payne Stewarts sty is out of this world. He makes all the girls mouth water like a water fauscet in the middle of the summer on a outdoor cement basketball court.");'> Fun Fact </button><br/>
+<img id="myImage">
+  </body>
