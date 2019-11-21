@@ -3,6 +3,19 @@
 <head>
 <title>Top Spikeball players and teams</title><br/>
 <br/>
+<script>
+function ChangeImage()
+{
+  document.getElementById("changeimage").src="spikeball-game-fun.jpg";
+}
+
+function ChangeImage1()
+{
+  document.getElementById("changeimage").src="spikeball-elite.webp";
+}
+
+
+</script>
 <style>
 
 
@@ -25,8 +38,15 @@
 
 <body style="background-color:black; color:gold">
 
-
-<h1><u><b><i>Top Spikeball Players And Teams</i></b></u></h1><br/>
+<h1><u><b><i>Top Spikeball Players And Teams</i></b></u></h1>
+<hr/>
+  <button onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
+  <button onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
+  <button onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
+  <button onclick="window.location.href = '';" > Spikeball Rules </button>
+  <button onclick="window.location.href = '';" > Your Spikeball Moments </button>
+  <button onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
+<hr/>
 <br/>
 What does it mean to be Elite?<br/>
 <br/>
@@ -38,7 +58,11 @@ What does it mean to be Elite?<br/>
 <br/>
 <br/>
 <br/>
-<img src="download (2).webp" style="height:40%;width:40%"/><br/>
+
+<img id="changeimage" src="spikeball-elite.webp" Height=500px width=700px><br/>
+
+<button onclick="ChangeImage()"> Change Image </button>
+<button onclick="ChangeImage1()"> Change Image Back </button>
 <br/>
 The players listed in the table compete in the Elite Spikeball Association.<br/>
 <br/>
@@ -46,31 +70,31 @@ The players listed in the table compete in the Elite Spikeball Association.<br/>
     <div style='float:left'>
         <table border="1" width="44" style="margin-left:15%;float:top;">
           <tr>
-            <th><h1><a href="Rank">Rank</a><h1></th>
-              <th><h1><a href="Name">Name</a><h1></th>
-            <th><h1><a href="Score">Score</a><h1></th>
+            <th>Rank</th>
+              <th>Name</th>
+            <th>Score</th>
 
 
             <tr>
-                <td><h1><a href="1">1</a></h1></td>
-                <td><h1><a href="Tyler Cisek">Tyler Cisek</a></h1></td>
-                <td><h1><a href="1300">1300</a></h1></td>
+                <td>1</td>
+                <td>Tyler Cisek</td>
+                <td>1300</td>
             </tr>
             <tr>
-                <td><h1><a href="2">2</a></h1></td>
-                <td><h1><a href="Max Model">Max Model</a></h1></td>
-                <td><h1><a href="1115">1115</a></h1></td>
+                <td>2</td>
+                <td>Max Model</td>
+                <td>1115</td>
             </tr>
             <tr>
-                <td><h1><a href="3">3</a></h1></td>
-                <td><h1><a href="Caleb Heck">Caleb Heck</a></h1></td>
-                <td><h1><a href="1068">1068</a></h1></td>
+                <td>3</td>
+                <td>Caleb Heck</td>
+                <td>1068</td>
             </tr>
         </table>
     </div>
-    <div style='float:left'>
+    <div style='float:left; margin-left:25%;float:top;'>
 Tyler Cisek: Number One Ranked Spikeball Player Exhibition Match:
-        <pre> <iframe width="560" height="315" src="https://www.youtube.com/embed/65Mlw7RKIU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></pre><br/>
+        <pre> <iframe width="560" height="315" src="https://www.youtube.com/embed/65Mlw7RKIU4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe></pre><br/>
 <br/>
     </div>
   </div>
