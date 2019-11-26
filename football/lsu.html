@@ -1,8 +1,18 @@
 <DOCTYPE!>
 <HTML>
   <head>
+    <script>
+    function myFunction(){
+      var x = document.getElementById("myImage");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
     <body style="background-color: purple;"><div id = "text" style = "color: gold;">
-<h1>Louisiana State University (LSU)</h1>
-<img src="0efeb7de5620ab2b9dc8e99db18b59ab.jpg" height=300px>
-<img src="joeburrow.jpeg" height=300px>
+<h1>Louisiana State University (LSU)</h1><br/>
+<img id="myImage" src="0efeb7de5620ab2b9dc8e99db18b59ab.jpg" height=300px></h1><br/><button onclick="myFunction();">Look at the Logo</button><br/>
+<img id=src="joeburrow.jpeg" height=300px><br/><button onclick="myFunction();">Very good players</button><br/>
 <img src="mag_odogame_06.jpg" height=300px><br/>
