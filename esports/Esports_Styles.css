@@ -1,0 +1,26 @@
+body
+{
+  background-color: lightblue;
+  color: black;
+}
+table, th, td
+{
+  border: 2px solid black;
+  border-collapse:collapse;
+  background-color: white;
+}
+th,td
+{
+  padding: 10px;
+}
+th{
+  background-color:black;
+  color:white;
+}
+
+button
+{
+  background-color: white;
+  color: black;
+  border-collapse: collapse;
+}
