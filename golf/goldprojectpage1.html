@@ -1,60 +1,75 @@
+
 <!DOCTYPE html>
+<html lang="en">
 <style>
-  body
-    {
-      background-color:lightblue;
-      color: darkred;
-    }
-      table, th, td
-    {
-      border: 1px solid black;
-      border-collapse: collapse
-    }
-    td,th
-    {
-      padding:10px
-    }
-    </style>
-  </body>
+ body
+   {
+    background-color:lightblue;
+     color: darkred;
+   }
+     table, th, td
+   {
+     border: 1px solid black;
+     border-collapse: collapse
+   }
+   td,th
+   {
+     padding:10px
+   }
+   img
+   {
+     height: 400px
+   }
+</style>
+<script>
+ function myFunction(){
+ document.getElementById("myImage").src="payne0005.jpeg"
+ }
+</script>
 <head>
-  <body>
-
+ <meta charset="utf-8">
  <title>Who is the goat Golfer????????? </title>
- <b> <h1> Who is the goat Golfer?????? </h1> </b>
-
- </body>
 </head>
 
-<table>
+<body>
+ <section>
+   <b> <h1> Who is the goat Golfer?????? </h1> </b>
+   <table>
+     <tr>
+       <th> The GOATS </th>
+       <th> How Many Masters They Have Won  </th>
+     </tr>
 
-  <tr>
-    <th> The GOATS </th>
-    <th> How Many Masters They Have Won  </th>
-  </tr>
+     <tr>
+       <td> 5. Tom Watson  </td>
+       <td> Two Master Titles  </td>
+     </tr>
 
-<tr>
-  <td> 5. Tom Watson  </td>
-  <td> Two Master Titles  </td>
-</tr>
+     <tr>
+       <td> 4. Tiger Woods <br/> <img src="tigerwoods.jpeg" alt="Tiger Woods"> </td>
+       <td> Four Master Titles </td>
+     </tr>
 
-<tr>
-  <td> 4. Tiger Woods </td>
-  <td> Four Master Titles </td>
-</tr>
+     <tr>
+       <td> 3. Arnold Palmer </td>
+       <td> Four Master Titles </td>
+     </tr>
 
-<tr>
-  <td> 3. Arnold Palmer </td>
-<td> Four Master Titles </td>
-</tr>
+     <tr>
+       <td> 2. Jack Nicklaus</td>
+       <td> Six Master Titles </td>
+     </tr>
 
-<tr>
-  <td> 2. Jack Nicklaus</td>
-  <td> Six Master Titles </td>
-</tr>
-
-<tr>
-  <td> 1. Payne Stewart </td>
-  <td> 0  T-8 in 86'</td>
-</tr>
-
-<img src="payne0005.jpeg" height= 500px>
+     <tr>
+       <td> 1. Payne Stewart </td>
+       <td> 0  T-8 in 86'</td>
+     </tr><br/>
+   </table>
+ </section>
+ <section>
+   <button onclick='myFunction();'> Picture of Payne Stewart Info</button>
+   <button onclick='alert("Payne Stewarts sty is out of this world.");'> Fun Fact </button><br/>
+   <img id="myImage">
+ </section>
+</body>
+s
