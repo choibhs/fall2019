@@ -27,10 +27,76 @@
  table, th, td
 
  {
-   Border: 1px solid black;
-   border-collapse: collapse;
+   border: 1px solid white;
+   Border-collapse: collapse;
  }
 
  th, td {
-   padding: 10px;
+   padding: 30px;
+ }
+
+ .changingbuttons
+ {
+   height:30px;
+   width: 200px;
+   background-color: white;
+   border-color: yellow;
+   color: Black;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px
+ }
+
+ .Picturetext
+ {
+   color:yellow
+ }
+
+ .Spikeball
+ {
+   color: yellow
+ }
+
+ .regularbutton
+ {
+   height:30px;
+   background-color: white;
+   border-color: Yellow;
+   color: Black;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px
+ }
+
+ .subheaderbutton
+ {
+   height:30px;
+   width: 250px;
+   background-color: white;
+   border-color: yellow;
+   color: Black;
+   padding: 10px 25px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px
+ }
+
+ .tournamentcell
+ {
+   color:white
+ }
+
+ .link
+ {
+   color:white
+ }
+
+ .tournamentheader
+ {
+   color:yellow
  }
