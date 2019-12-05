@@ -3,46 +3,90 @@
 <title>Spikeball Rules</title>
 
 <style>
-.do
+.headerbuttons
 {
-height:40px
-background-color:  yellow;
- border: none;
- color: Black;
+ height:40px;
+ background-color:  Black;
+ border-color: white;
+ color: White;
  padding: 15px 32px;
  text-align: center;
  text-decoration: none;
  display: inline-block;
  font-size: 16px
 }
+
+
+
+.regularbuttons
+{
+  height:35px;
+  background-color: White;
+  border-color: Black;
+  color: Black;
+  padding: 7.5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px
+}
+
 </style>
 
 
 <script>
-
+/*
 function ChangeImage()
 
 {
   document.getElementById("changeimage").src="spikeballbeingplayed1.jpg";
+  document.getElementById("changeimage").style.height='250px';
 }
 
 function ChangeImage1()
 
 {
   document.getElementById("changeimage").src="spikeballbeingplayed2.jpg";
+    document.getElementById("changeimage").style.height='250px';
 }
+
+*/
+var clicked = false;
+function ChangeImage()
+
+{
+
+var img = document.getElementById('changeimage');
+
+  if (clicked) { //this will be executed on future clicks after first click
+    img.src = 'spikeballbeingplayed1.jpg';
+    img.style.width='400px';
+    console.log('Next click');
+    //or do something else
+    clicked=false;
+  } else { //this will only be executed once
+    img.src = 'spikeballbeingplayed2.jpg';
+      img.style.width='400px';
+    console.log('First click');
+      clicked = true; //update to true after first click
+  }
+
+}
+
+
+
 
 </script>
 
 <head>
 <hr/>
 
-<button class="do" onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
-<button class="do" onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
-<button class="do" onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
-<button class="do" onclick="window.location.href = '';" > Spikeball Rules </button>
-<button class="do" onclick="window.location.href = '';" > Your Spikeball Moments </button>
-<button class="do" onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
+<button class="headerbuttons" onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
+<button class="headerbuttons" onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
+<button class="headerbuttons" onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
+<button class="headerbuttons" onclick="window.location.href = '';" > Spikeball Rules </button>
+<button class="headerbuttons" onclick="window.location.href = '';" > Your Spikeball Moments </button>
+<button class="headerbuttons" onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
 
 <hr/>
 
@@ -53,8 +97,8 @@ function ChangeImage1()
 
 
 <img id="changeimage" src="spikeballbeingplayed2.jpg" width=400px></br></br>
-<button onclick="ChangeImage()"> Change Image</button>
-<button onclick="ChangeImage1()"> Change Image Back</button>
+<button class="regularbuttons" onclick="ChangeImage()"> Change Image</button>
+
 
 
 <h2>Before Play</h2>
@@ -66,7 +110,7 @@ function ChangeImage1()
    <li> The tension of the net should be consistent throughout. A ball dropped from 3 feet above the net should bounce up approximately 12-18 in.</li>
 
   </ul>
-<button type="button" onclick="document.getElementById('demo').style.display='block'">Show Rules</button>
+<button type="button" class="regularbuttons" onclick="document.getElementById('demo').style.display='block'">Show Rules</button>
 
 
   <h2>During Play</h2>
@@ -83,7 +127,7 @@ function ChangeImage1()
             <li>To equalize sun and wind effects, rotate starting positions 90 degrees counter-clockwise every 5 points if desired.</li>
     </ul>
 
-    <button type="button" onclick="document.getElementById('duringplay').style.display='block'">Show Rules</button>
+    <button type="button" class="regularbuttons" onclick="document.getElementById('duringplay').style.display='block'">Show Rules</button>
 
 
 
@@ -99,7 +143,7 @@ function ChangeImage1()
 
         </ul>
 
-        <button type="button" onclick="document.getElementById('Scoring').style.display='block'">Show Rules</button>
+        <button type="button" class="regularbuttons" onclick="document.getElementById('Scoring').style.display='block'">Show Rules</button>
 
         <h2>Serving</h2>
 
@@ -113,7 +157,7 @@ function ChangeImage1()
 
           </ul>
 
-          <button type="button" onclick="document.getElementById('Serving').style.display='block'">Show Rules</button>
+          <button type="button" class="regularbuttons" onclick="document.getElementById('Serving').style.display='block'">Show Rules</button>
 
 
 
@@ -131,7 +175,7 @@ function ChangeImage1()
 
             </ul>
 
-            <button type="button" onclick="document.getElementById('Rallies').style.display='block'">Show Rules</button>
+            <button type="button" class="regularbuttons" onclick="document.getElementById('Rallies').style.display='block'">Show Rules</button>
 
 
             <h2>Infractions</h2>
@@ -145,7 +189,7 @@ function ChangeImage1()
 
               </ul>
 
-              <button type="button" onclick="document.getElementById('Infractions').style.display='block'">Show Rules</button>
+              <button type="button"  class="regularbuttons" onclick="document.getElementById('Infractions').style.display='block'">Show Rules</button>
 
 
 <br/>
