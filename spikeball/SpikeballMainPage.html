@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<style>
-
-.Spikeball
-{
-  color: yellow
-}
-
-</style>
-
 <script>
 
 function ChangeVideo1()
@@ -26,30 +17,38 @@ function ChangeVideo3()
 {
   document.getElementById("Video").src='https://www.youtube.com/embed/ooPYfcYR5SQ';
 }
-
+function ChangeImage()
+{
+  document.getElementById("Image").src='download1.png';
+}
+function ChangeImage2()
+{
+  document.getElementById("Image").src='download.png';
+}
 </script>
 
 <head>
   <title> Spikeball Main Page </title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
 </head>
 
 
 <body style="background-color: black; color: white">
 
 
-<pre> <img src="images.png" width=230px height=80px> <img src="download.png" width=340px height=80px>   </pre>
+<pre> <img src="images.png" width=230px height=80px> <img id="Image" src="download.png" width=340px height=80px>  <button class="changingbuttons" onclick="ChangeImage()"> Change Image </button> <button class="changingbuttons" onclick="ChangeImage2()"> Change Image Back </button> </pre>
 
 
 <h1 class="Spikeball"> Spikeball </h1>
 
 <hr/>
 
-<button onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
-<button onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
-<button onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
-<button onclick="window.location.href = '';" > Spikeball Rules </button>
-<button onclick="window.location.href = '';" > Your Spikeball Moments </button>
-<button onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
+<button class="headerbutton" onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
+<button class="headerbutton" onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
+<button class="headerbutton" onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
+<button class="headerbutton" onclick="window.location.href = 'Spikeball Rules.html';" > Spikeball Rules </button>
+<button class="headerbutton" onclick="window.location.href = 'Spikeballhighlights.html';" > Highlights </button>
+<button class="headerbutton" onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
 
 <hr/>
 
@@ -66,7 +65,7 @@ function ChangeVideo3()
 
 
 
-<pre>       <a target="_blank" href="https://challonge.com/Nationals19Pro">Pro Division</a>                       <a target="_blank" href="https://challonge.com/Nationals19Women">Women's Division</a>                     <a target="_blank" href="https://challonge.com/Nationals19Premier">Premeir Division</a> </pre>
+<pre>       <a class="Picturetext" target="_blank" href="https://challonge.com/Nationals19Pro">Pro Division</a>                       <a class="Picturetext" target="_blank" href="https://challonge.com/Nationals19Women">Women's Division</a>                     <a  class="Picturetext" target="_blank" href="https://challonge.com/Nationals19Premier">Premeir Division</a> </pre>
 
 
 
@@ -87,13 +86,13 @@ function ChangeVideo3()
 
 </br>
 
-<button onclick='ChangeVideo1()'> Video 1 </button>
+<button class="changingbuttons" onclick='ChangeVideo1()'> Video 1 </button>
 
 
-<button onclick='ChangeVideo2()'> Video 2 </button>
+<button class="changingbuttons" onclick='ChangeVideo2()'> Video 2 </button>
 
 
-<button onclick='ChangeVideo3()'> Video 3 </button>
+<button class="changingbuttons" onclick='ChangeVideo3()'> Video 3 </button>
 
 </br></br>
 
