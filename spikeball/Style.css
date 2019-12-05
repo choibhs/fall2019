@@ -1,0 +1,36 @@
+.headerbutton
+{
+  height:40px;
+  background-color: yellow;
+  border: none;
+  color: Black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px
+}
+.regularbutton
+{
+  height:30px;
+ background-color: white;
+ border-color: Yellow;
+ color: Black;
+ padding: 10px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px
+}
+
+
+ table, th, td
+
+ {
+   Border: 1px solid black;
+   border-collapse: collapse;
+ }
+
+ th, td {
+   padding: 10px;
+ }
