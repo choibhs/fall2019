@@ -2,6 +2,12 @@
  <html>
 <head>
 <title>Top Spikeball players and teams</title><br/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
 <br/>
 <script>
 function ChangeImage()
@@ -18,7 +24,7 @@ function ChangeImage1()
 </script>
 <link rel="stylesheet" type="text/css" href="Style.css">
 
-</head>
+
 
 
 
@@ -27,15 +33,19 @@ function ChangeImage1()
 
 
 <hr/>
-  <button class="headerbutton" onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
-  <button class="headerbutton" onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
-  <button class="headerbutton" onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
-  <button class="headerbutton" onclick="window.location.href = 'Spikeball Rules.html';" > Spikeball Rules </button>
-  <button class="headerbutton" onclick="window.location.href = '';" > Your Spikeball Moments </button>
-  <button class="headerbutton" onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
+<button class="headerbutton" onclick="window.location.href = 'SpikeballMainPage.html';"> Main Page </button>
+<button class="headerbutton" onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
+<button class="headerbutton" onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
+<button class="headerbutton" onclick="window.location.href = 'Spikeball Rules.html';" > Spikeball Rules </button>
+<button class="headerbutton" onclick="window.location.href = 'Spikeballhighlights.html';" > Highlights </button>
+<button class="headerbutton" onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
 <hr/>
 <br/>
 <h1>Top Spikeball Players And Teams</h1>
+<p id="demo">These Teams Are Know For Their Spikeball Skills.</p>
+
+<button class="regularbutton" type="button" onclick='document.getElementById("demo").innerHTML = "They Earn Points And Status Based On Thier Wins."'>Change Text!</button>
+<button class="regularbutton" type="button" onclick='document.getElementById("demo").innerHTML = "These Teams Are Known For Their Spikeball Skills"'>Change Text Back!</button><br/>
 <img src="spikeballonthebeech.jpg">
 <img src="waterfallspikeball.jpg">
 <br/>
