@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html>
+<script>
+function ChangeVideo()
+{
+  document.getElementById("video").src='https://www.youtube.com/embed/9hQL0Z7peC0'
+}
 
+function ChangeVideo1()
+{
+  document.getElementById("video").src='https://www.youtube.com/embed/tc1pEqCGWnw'
+}
+
+</script>
 <head>
   <title>Spikeball Highlights</title>
 <link rel="stylesheet" type="text/css" href="Style.css">
@@ -13,7 +24,7 @@
   <button class="headerbutton" onclick="window.location.href = 'SpikeballTopPlayers.html';"> Top Players and Teams </button>
   <button class="headerbutton" onclick="window.location.href = 'How Spikeball Started.html';"> How Spikeball Started </button>
   <button class="headerbutton" onclick="window.location.href = 'Spikeball Rules.html';" > Spikeball Rules </button>
-  <button class="headerbutton" onclick="window.location.href = '';" > Your Spikeball Moments </button>
+  <button class="headerbutton" onclick="window.location.href = 'Spikeballhighlights.html';" > Highlights </button>
   <button class="headerbutton" onclick="window.location.href = 'Upcomingtournaments.html';"> Upcoming Tournaments </button>
 <hr/>
 <h1>Below Are The Top Spikeball Highlights:</h1><br/>
@@ -24,7 +35,10 @@
 <br/>
 <hr/>
 "Top Ten Plays Of 2017"<br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tc1pEqCGWnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+
+<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/tc1pEqCGWnw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br/>
+<button  onclick='ChangeVideo()'>Change Video</button>
+<button  onclick='ChangeVideo1()'>Change Video Back</button>
 <hr/>
 <br/>
 <hr/>
