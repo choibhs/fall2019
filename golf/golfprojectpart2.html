@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <link rel="stylesheet" type="text/css" href="styles.css">
-<style>
-  body
-    {
-      background-color:lightgreen;
-      color: darkred;
-      border-color: darkred;
-    }
-      table, th, td
-    {
-      border: 1px solid black;
-      border-collapse: collapse
-    }
-    td,th
-    {
-      padding:10px
-    }
-    img
-    {
-      height: 400px
-    }
-    </style>
-    <script>
+ <script>
       function myFunction(){
         document.getElementById("myImage").src="unknown-42.jpeg"
       }
 
       </script>
+    <style>
+    button
+    {
+      background-color: lightgreen
+      color: Darkred
+    }
+</style>
 <head>
+
+
+
 
  <title> Who has won the most masters?????? </title>
 
@@ -64,3 +53,17 @@
 <td> 6 Master championship dubs, just like Tom, GOAT LEVEL </td>
 <td> goat club, all time winners club, greatest man alive club </td>
 </tr>
+</table>
+<p><button onclick="myFunction()">Click to see how many majors The Golden Bear has won</button></p>
+
+<div id="myDIV">How Many?</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.innerHTML === "How Many?") {
+    x.innerHTML = "He won 18 majors, which puts him in the lead for both Major and Master wins";
+  } else {
+    x.innerHTML = "How many?";
+  }
+}
+</script>
