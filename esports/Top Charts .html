@@ -1,23 +1,28 @@
 <html>
 <head>
-  <h1> <u>Record Sales</u> </h1>
+  <h1> <u>Top Charts</u> </h1>
 </head>
-<style>
-  table, th, td
-  {
-    border: solid black;
-  }
-  th, td  {
-  padding: 10px;
-  }
-  img
-  {
-    height: 350px
-  }
+<link rel="stylesheet" type="text/css" href = "Esports_Styles.css">
+<button onclick="document.getElementById('demo').style.background-color='black'; color='white'">Night Mode</button>
+<button onclick="document.getElementById('demo').style.background-color='white'; color ='black' ">Lightmode</button>
 
-</style>
 
-<body style="background-color: lightblue">
+<hr>
+<body style="background-color: lightblue"><p id="demo">
+<table>
+  <tr>
+    <th>Top Charts</th>
+    <th>Record Sales</th>
+    <th>New Realeases/Updates</th>
+    <th>Tournemants</th>
+    <th>2019 Highligths</th>
+    <th>Top players/Streamers</th>
+  </tr>
+</table>
+  <br/>
+  <br/>
+
+
 <table>
   <tr>
     <th>GAME</th>
@@ -26,7 +31,10 @@
   <tr>
     <td class="Fortnite">1. Fortnite<br/><img src="fortnite.jpg"></td>
     <td>Fortnite was the most dominant game the past two years but it is dropping in popularity.
-    They hosted the largest esports tournement, The World Cup, for three million dollars.</td>
+    They hosted the largest esports tournement, The World Cup, for three million dollars. In fact its so popular because it's free! Try it here!
+    <br/>
+<a target="_blank" href="https://www.epicgames.com/store/en-US/">Try it here!</a><br/>
+  </td>
   </tr>
   <tr>
     <td class="Cod">2. Call of Duty<br/><img src="Cod.jpg"></td>
@@ -50,6 +58,6 @@
 
   </table>
   <br/>
-
+</p>
 </body>
 </html>
