@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Majors </title>
   <style>
-  table, th, td
+  .tableHeader
   {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  th, td {
-    padding:10px;
-  }
-  body{
-    background-color: lightblue;
-    color: darkred;
-  }
-  .description
-  {
-    color: Green;
+    color: Blue
   }
   button
   {
-    background-color: lightblue;
+    background-color: lightgreen;
     color: darkred;
   }
-  img
-  {
-    height: 400px;
-  }
   </style>
+  <title> Majors </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
   <script>
   function changeText()
   {
@@ -68,14 +53,14 @@
 <h1>Tournaments and their Winners</h1>
     <table>
       <tr>
-        <th> Major</th>
+        <th class="tableHeader"> Major</th>
         <th> <button onclick='changeText();'>Masters</button> </th>
         <th> <button onclick='changeText2();'>US Open</button> </th>
         <th> <button onclick='changeText3();'>PGA Championship</button> </th>
         <th> <button onclick='changeText4();'>The Open Championship</button> </th>
       </tr>
       <tr>
-        <th> Most Recent Winner </th>
+        <th class="tableHeader"> Most Recent Winner </th>
         <th> <button onclick='changeImage();'>Tiger Woods</button> </th>
         <th> <button onclick='changeImage2();'>Gary Woodland</button> </th>
         <th> <button onclick='changeImage3();'>Brooks Koepka</button> </th>
