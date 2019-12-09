@@ -1,28 +1,99 @@
 <!DOCTYPE html>
 <html>
 
-<body style="background-color:#99ccff">
+<head>
+<title>NFL Highlights</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+
+var clicked = false;
+
+function toggleBtnClick1() {
+  var img = document.getElementById('LamarImage');
+  if (clicked) {
+    img.src = 'usa_today_13680126.0.webp';
+    clicked = false;
+  } else {
+    img.src = 'usp_nfl__chicago_bears_at_st_77558792.webp';
+    clicked = true;
+  }
+}
+
+var clicked = false;
+
+function toggleBtnClick2() {
+  var img = document.getElementById('EdelmanImage');
+  if (clicked) {
+    img.src = 'AP_19321843725686.jpg';
+    clicked = false;
+  } else {
+    img.src = 'falcons panthers_1574025469513.jpg_16832480_ver1.0_1280_720.jpg';
+    clicked = true;
+  }
+}
+
+</script>
+
+</head>
+
+<body>
 
 <h1>Top NFL League Highlights</h1>
 
+<div class="dropdown">
+<button class="dropbtn">Player Highlights</button>
+<div class="dropdown-content">
+
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/lamarjackson.html">Lamar Jackson heats up to destroy the Texans in week 11</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/frankclark.html">Frank Clark leads Chiefs defense to defeat the Chargers</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/jimmygarapolo.html">Jimmy Garoppolo throws for 4 touchdowns in close game against the Cardinals</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/toddygurley.html">Todd Gurley breaks free for a big 133 yard game against the Bears</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/markingram.html">Mark Ingram As Top Offensive Player in Week 11 Week</a>
+
+</div>
+</div>
+
 <br/>
-<h3>Player Highlights:</h3>
-<ul>
-  <li>Lamar Jackson heats up to destroy the Texans in week 11</li>
-  <li>Frank Clark leads Chiefs defense to defeat the Chargers</li>
-  <li>Jimmy Garoppolo throws for 4 touchdowns in close game against the Cardinals</li>
-  <li>Todd Gurley breaks free for a big 133 yard game against the Bears</li>
-  <li>Jacobe Brisett has a breakout game in his weak 11 return</li>
-</ul>
+<br/>
+
+<img id="LamarImage" src="usa_today_13680126.0.webp" width=600px><br/>
+
+<button class="myButton" onclick="toggleBtnClick1()">Switch Image</button>
+
+<br/>
+<br/>
+<br/>
 
 <hr/>
 
 <br/>
-<h3>In-game Highlights:</h3>
-<ul>
-  <li>Julian Edelman throws for a touchdown pass against the Eagles</li>
-  <li>Mike Williams leaps up to catch a 50 yard pass in an epic loss to the chiefs</li>
-  <li>Bill Belichick trolls the Jets in a Patriots shut out</li>
-  <li>Barner for the Falcons has the longest punt return touchdown this season against the Panthers</li>
-  <li>Broncos complete stunning trick play</li>
-</ul>
+
+<div class="dropdown">
+<button class="dropbtn">In-game Highlights</button>
+<div class="dropdown-content">
+
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/julianedelman.html">Julian Edelman throws for a touchdown pass against the Eagles</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/mikewilliams.html">Mike Williams leaps up to catch a 50 yard pass in an epic loss to the chiefs</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/patsvjets.html">Patriots troll the Jets in a Patriots shut out</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/barner.html">Barner for the Falcons has the longest punt return touchdown this season against the Panthers</a>
+<a href="file:///Users/cooper/Desktop/github/fall20192/football/broncostrickplay.html">Broncos complete stunning trick play</a>
+
+</div>
+</div>
+
+<br/>
+<br/>
+
+<img id="EdelmanImage" src="AP_19321843725686.jpg" width="600px"><br/>
+
+<button class="myButton" onclick="toggleBtnClick2()">Switch Image</button>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>
