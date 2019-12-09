@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
 
+<script>
+
+function myFunction2() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function myFunction()
+{
+  document.getElementById("myImage").src = "image5_medium.jpg";
+}
+</script>
 <style>
+
+
   table, th, td
   {
     border: 2px solid black;
@@ -12,7 +30,13 @@
     background-color: grey;
     color: black;
   }
-  .toprbs
+  button
+  {
+    color: red;
+    background-color: lightblue;
+    border: 2px solid black;
+  }
+  #toprbs
   {
   color: red
   }
@@ -37,15 +61,21 @@
   <title>FANTASY FOOTBALL</title>
 </head>
 <body>
+<a href="index.html">Go To Index</a>
 <body style="background-color: lightblue;">
 <h1>Fantasy Football</h1><br>
-<img src="EspnFantasy.png" height=250px>
-<img src="image5_medium.jpg" height=250px></br>
+<img id="myImage" src="EspnFantasy.png" height= 250px><br>
 </br>
-<b><u>Background Info:</u></b><br/>
- Fantasy football, like other fantasy games, puts you in the front office and on the sidelines as General Manager and Coach of your team. You select from the best of the best in the NFL and they compete on a weekly basis for your team. Their on-field performance drives your fantasy point total and overall success<br/>
- Specifically, fantasy football works like this: You decide what type of league you want to participate in, acquire a roster of players (either through a draft or through autopick assignment), then set your lineup each week during the season and watch as touchdowns, field goals, yards gained, sacks, interceptions and much, much more fantasy points are scored for or against your team.<br/>
+<button onclick='myFunction();'>Espn or Yahoo?</button><br>
 <br/>
+<b><u>Background Info:</u></b><br>
+<button onclick="myFunction2()">Click Me</button>
+
+<div id="myDIV">
+  Fantasy football, like other fantasy games, puts you in the front office and on the sidelines as General Manager and Coach of your team. You select from the best of the best in the NFL and they compete on a weekly basis for your team. Their on-field performance drives your fantasy point total and overall success<br/>
+  Specifically, fantasy football works like this: You decide what type of league you want to participate in, acquire a roster of players (either through a draft or through autopick assignment), then set your lineup each week during the season and watch as touchdowns, field goals, yards gained, sacks, interceptions and much, much more fantasy points are scored for or against your team.<br/>
+</div>
+ <br/>
 <h4>Here are the top Fantasy players by postition (In most points total) through first 10 weeks of the 2019 season:</h4>
 <br/>
 <table>
@@ -57,31 +87,31 @@
  </tr>
 
 <tr>
- <td class="toprbs">Christian McCaffrey</td>
+ <td id="toprbs">Christian McCaffrey</td>
  <td>Panthers</td>
  <td>248.50</td>
 </tr>
 
  <tr>
-<td class="toprbs">Dalvin Cook</td>
+<td id="toprbs">Dalvin Cook</td>
 <td>Vikings</td>
 <td>219.50</td>
 </tr>
 
 <tr>
-  <td class="toprbs">Nick Chubb</td>
+  <td id="toprbs">Nick Chubb</td>
   <td>Browns</td>
   <td>152.00</td>
 </tr>
 
 <tr>
-  <td class="toprbs">Ezekiel Elliott</td>
+  <td id="toprbs">Ezekiel Elliott</td>
   <td>Cowboys</td>
   <td>145.00</td>
 </tr>
 
 <tr>
-  <td class="toprbs">Josh Jacobs</td>
+  <td id="toprbs">Josh Jacobs</td>
   <td>Raiders</td>
   <td>143.30</td>
 </table>
@@ -233,7 +263,13 @@
   <td>78.00</td>
 </tr>
 </table>
+<br/>
 
+<h4>Sources:</h4>
+
+<a href="https://fantasy.espn.com/football/players/projections"><button>Espn Fantasy</button></a><br/>
+<br/>
+<a href="https://football.fantasysports.yahoo.com/f1/1258057/playersearch?&search="><button>Yahoo Fantasy</button></a><br/>
 
 
 
