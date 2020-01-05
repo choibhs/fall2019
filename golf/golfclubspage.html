@@ -1,21 +1,70 @@
 <!DOCTYPE>
 <html>
 <head>
-  <body>
-    <title> Different Golf Clubs and Their Uses </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <title> Different Golf Clubs and Their Uses </title>
+</head>
+
+<script>
+
+function ChangeImage1()
+{
+  document.getElementById("Golf Bag").src='golfbag.jpg';
+    document.getElementById("Golf Bag").style.width='300px'
+}
+
+function ChangeImage2()
+{
+  document.getElementById("Golf Bag").src='golfgif.jpg';
+    document.getElementById("Golf Bag").style.width='300px';
+}
+</script>
+
+<body>
 
 <b> <h1> Different Golf Clubs and Their Uses </b> </h1>
 
+<br><br/>
 
-<body style="background-color:lightblue; color: darkred">
+  <style>
+  body
+  {
+    background-color:lightgreen;
+     color: darkred
+  }
 
-<img src="golfgif.jpg" height=140px> <br><br><br/>
+table, th, td
 
+{
+  border: 4px solid darkred;
+  border-collapse:collapse;
+}
+ th, td
+
+ {
+   padding:25px
+ }
+
+  </style>
+
+<img id="Golf Bag" src="golfgif.jpg" height=300px> <br><br><br/>
+
+<button onclick='ChangeImage1()'> Change Image </button>
+
+<button onclick='ChangeImage2()'> Change Image Back </button>
+
+<br><br></br>
+
+
+
+<a href="#bottom"> Click here to see bottom of page. </a>
 
 <ul>
   <li> <b> Driver </b> - The driver is the longest club used exclusively for tee shots, as it produces maximum distance and height. </li>
 
-<br> <img src="driver.jpg" height=90px>
+<br> <img src="driver.jpg" height=90ztpx>
+
 
 <br><br/>
   <li> <b> Irons </b> - These clubs are for hitting shots from the fairway onto the green. Shots from long and medium irons travel farther, while short-iron shots fly higher but for a shorter distance. You also use short irons for chip shots from just off the green. </li>
@@ -38,11 +87,35 @@
 <br> <img src="putter.jpg" height=90px>
 
 <br><br><br/>
-Click the video below to learn more about different golf clubs and what they're for!
+<h3>Click the video below to learn more about different golf clubs and what they're used for! </h3>
 <br><br><br/>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5qFHXlZyNQQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br><br/>
 
+<h2> <i> See the table below for the average distances each club projects! </i> </h3>
+<br>
+<style>
 
+</style>
+
+<table>
+  <tr>
+  <th>Drivers</th>
+  <th>Irons</th>
+  <th>Fairways</th>
+  <th>Wedges</th>
+  <th>Putters</th>
+</tr>
+<tr>
+  <td>230 yards </td>
+  <td>120 yards </td>
+  <td>190 yards </td>
+  <td>105 yards </td>
+  <td>2.3 yards </td>
+</tr>
+</table>
+
+<a id="bottom"> <a/>
 
 </body>
 </head>

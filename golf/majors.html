@@ -2,32 +2,73 @@
 <html>
 <head>
   <style>
-  table, th, td
+  .tableHeader
   {
-    border: 1px solid black;
-    border-collapse: collapse;
+    color: Blue
   }
-  th, td {
-    padding:10px
+  button
+  {
+    background-color: lightgreen;
+    color: darkred;
   }
   </style>
+  <title> Majors </title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+  function changeText()
+  {
+    document.getElementById("definition").innerHTML = "Anually played in Augusta, Georgia early in April. It's held at the Augusta National Golf Club.";
+  }
+  function changeText2()
+  {
+    document.getElementById("definition").innerHTML = "Anually played at different locations in the U.S., at around mid-June.";
+  }
+  function changeText3()
+  {
+    document.getElementById("definition").innerHTML = "Anually played at various courses around the U.S. The time of this tournament varies";
+  }
+  function changeText4()
+  {
+    document.getElementById("definition").innerHTML = "Also referred to as the British Open, it is anually held at links courses around the U.K.";
+  }
+  function changeImage()
+  {
+    document.getElementById("image").src='Screen Shot 2019-11-15 at 4.03.44 PM.png';
+  }
+  function changeImage2()
+  {
+    document.getElementById("image").src='Screen Shot 2019-11-15 at 4.03.02 PM.png';
+  }
+  function changeImage3()
+  {
+    document.getElementById("image").src='Screen Shot 2019-11-15 at 4.02.25 PM.png';
+  }
+  function changeImage4()
+  {
+    document.getElementById("image").src='Screen Shot 2019-11-15 at 3.59.51 PM.png';
+  }
+  </script>
   </head>
   <body>
 <h1>Tournaments and their Winners</h1>
     <table>
       <tr>
-        <th> Major </th>
-        <th> Masters </th>
-        <th> US Open </th>
-        <th> PGA Championship </th>
-        <th> British Open </th>
+        <th class="tableHeader"> Major</th>
+        <th> <button onclick='changeText();'>Masters</button> </th>
+        <th> <button onclick='changeText2();'>US Open</button> </th>
+        <th> <button onclick='changeText3();'>PGA Championship</button> </th>
+        <th> <button onclick='changeText4();'>The Open Championship</button> </th>
       </tr>
       <tr>
-        <td> Most Recent Winner </td>
-        <td> Tiger Woods </td>
-        <td> Gary Woodland </td>
-        <td> Brooks Koepka </td>
-        <td> Shane Lowry </td>
+        <th class="tableHeader"> Most Recent Winner </th>
+        <th> <button onclick='changeImage();'>Tiger Woods</button> </th>
+        <th> <button onclick='changeImage2();'>Gary Woodland</button> </th>
+        <th> <button onclick='changeImage3();'>Brooks Koepka</button> </th>
+        <th> <button onclick='changeImage4();'>Shane Lowry</button> </th>
     </table>
+    <h2 class="description"> Description of the Course: </h2>
+    <span id="definition">Click the desired definition.</span>
+    <h2 class="description"> Picture of the Player: </h2>
+     Click the desired player <br/><img id="image">
     </body>
 </html>
