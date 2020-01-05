@@ -24,7 +24,28 @@ button
   color: black;
   border-collapse: collapse;
 }
+
 img
 {
   height:150
+}
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
