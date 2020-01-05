@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>NFL Highlights</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script>
+
+var clicked1 = false;
+
+function toggleBtnClick1() {
+  var img = document.getElementById('LamarImage');
+  if (clicked1) {
+    img.src = 'usa_today_13680126.0.webp';
+    clicked1 = false;
+  } else {
+    img.src = 'usp_nfl__chicago_bears_at_st_77558792.webp';
+    clicked1 = true;
+  }
+}
+
+var clicked2 = false;
+
+function toggleBtnClick2() {
+  var img = document.getElementById('EdelmanImage');
+  if (clicked2) {
+    img.src = 'AP_19321843725686.jpg';
+    clicked2 = false;
+  } else {
+    img.src = 'falcons panthers_1574025469513.jpg_16832480_ver1.0_1280_720.jpg';
+    clicked2 = true;
+  }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Top NFL League Highlights</h1>
+
+<br/>
+
+<a href="index.html">Back to Index</a>
+
+<br/>
+<br/>
+<br/>
+
+<div class="dropdown">
+<button class="dropbtn">Player Highlights</button>
+<div class="dropdown-content">
+
+<a href="lamarjackson.html">Lamar Jackson heats up to destroy the Texans in week 11</a>
+<a href="frankclark.html">Frank Clark leads Chiefs defense to defeat the Chargers</a>
+<a href="jimmygarapolo.html">Jimmy Garoppolo throws for 4 touchdowns in close game against the Cardinals</a>
+<a href="toddygurley.html">Todd Gurley breaks free for a big 133 yard game against the Bears</a>
+<a href="markingram.html">Mark Ingram As Top Offensive Player in Week 11 Week</a>
+
+</div>
+</div>
+
+<br/>
+<br/>
+
+<img id="LamarImage" src="usa_today_13680126.0.webp" width=600px><br/>
+
+<button class="myButton" onclick="toggleBtnClick1()">Switch Image</button>
+
+<br/>
+<br/>
+<br/>
+
+<hr/>
+
+<br/>
+
+<div class="dropdown">
+<button class="dropbtn">In-game Highlights</button>
+<div class="dropdown-content">
+
+<a href="julianedelman.html">Julian Edelman throws for a touchdown pass against the Eagles</a>
+<a href="mikewilliams.html">Mike Williams leaps up to catch a 50 yard pass in an epic loss to the chiefs</a>
+<a href="patsvjets.html">Patriots troll the Jets in a Patriots shut out</a>
+<a href="barner.html">Barner for the Falcons has the longest punt return touchdown this season against the Panthers</a>
+<a href="broncostrickplay.html">Broncos complete stunning trick play</a>
+
+</div>
+</div>
+
+<br/>
+<br/>
+
+<img id="EdelmanImage" src="AP_19321843725686.jpg" width="600px"><br/>
+
+<button class="myButton" onclick="toggleBtnClick2()">Switch Image</button>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+</body>
+</html>
